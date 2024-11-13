@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Online Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Calculator.css">
+</head>
+<body>
+
+<div class="container calculator mt-5">
+  <div id="display" class="display bg-dark text-light text-right p-3">0</div>
+  <div class="buttons d-flex flex-wrap">
+    
+    <button class="btn btn-secondary col-3" onclick="clearDisplay()">C</button>
+    <button class="btn btn-secondary col-3" onclick="deleteLast()">DEL</button>
+    <button class="btn btn-secondary col-3" onclick="appendOperator('%')">%</button>
+    <button class="btn btn-primary col-3" onclick="appendOperator('/')">/</button>
+    
+    <button class="btn btn-light col-3" onclick="appendNumber(7)">7</button>
+    <button class="btn btn-light col-3" onclick="appendNumber(8)">8</button>
+    <button class="btn btn-light col-3" onclick="appendNumber(9)">9</button>
+    <button class="btn btn-primary col-3" onclick="appendOperator('*')">*</button>
+    
+    <button class="btn btn-light col-3" onclick="appendNumber(4)">4</button>
+    <button class="btn btn-light col-3" onclick="appendNumber(5)">5</button>
+    <button class="btn btn-light col-3" onclick="appendNumber(6)">6</button>
+    <button class="btn btn-primary col-3" onclick="appendOperator('-')">-</button>
+    
+    <button class="btn btn-light col-3" onclick="appendNumber(1)">1</button>
+    <button class="btn btn-light col-3" onclick="appendNumber(2)">2</button>
+    <button class="btn btn-light col-3" onclick="appendNumber(3)">3</button>
+    <button class="btn btn-primary col-3" onclick="appendOperator('+')">+</button>
+    
+    <button class="btn btn-light col-3" onclick="appendNumber(0)">0</button>
+    <button class="btn btn-light col-3" onclick="appendNumber('.')">.</button>
+    <button class="btn btn-success col-6" onclick="calculate()">=</button>
+  </div>
+</div>
+
+<script src="Calculator.js"></script>
+
+</body>
+</html>
